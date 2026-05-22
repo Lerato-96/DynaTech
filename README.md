@@ -11,6 +11,7 @@ The chatbot is integrated into a professional portfolio website and provides use
 ## Live Demo
 ### Chatbot Application
 https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/04/23/09/20260423095508-0MHJMVOQ.json
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/bf07c81a-21a0-4e48-ae09-a073f7a15e84" />
 
 ---
 

@@ -125,3 +125,101 @@ Aspiring AI, IT & Administrative Professional passionate about Artificial Intell
 ## References
 - Botpress Documentation: https://botpress.com/docs/webchat/get-started/introduction
 - Botpress Webchat Integration: https://botpress.com/docs/webchat/get-started/embedding-webchat
+GitHub Repository Structure
+
+Use this structure for your GitHub repository:
+
+AI-Chatbot-Integration/
+│
+├── README.md
+├── index.html
+├── styles.css
+├── script.js
+├── assets/
+│   ├── screenshots/
+│   └── images/
+└── docs/
+    └── project-documentation.pdf
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chatbot Integration</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>AI Chatbot Integration Project</h1>
+
+    <p>
+      This project demonstrates conversational AI integration using Botpress Cloud.
+    </p>
+
+    <button id="open-chat">Open Chatbot</button>
+  </div>
+
+  <script>
+    window.botpress.init({
+      "botId": "your-bot-id",
+      "configuration": {
+        "website": {},
+        "email": {},
+        "phone": {},
+        "termsOfService": {},
+        "privacyPolicy": {},
+        "variant": "soft",
+        "themeMode": "light",
+        "fontFamily": "Inter"
+      },
+      "clientId": "your-client-id"
+    });
+
+    document.getElementById("open-chat").addEventListener("click", () => {
+      window.botpress.open();
+    });
+  </script>
+
+</body>
+</html>
+styles.css
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #1e293b;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+script.js
+console.log("AI Chatbot Integration Loaded");
